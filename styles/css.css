@@ -1,14 +1,14 @@
 .grid-container{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr  ;
     /*grid-template-rows: auto auto auto auto auto auto auto auto auto;*/
     padding: 1em;
 
 }
 .grid-item{
     background-color: yellow;
-    border: 1em solid #50c44c;
+    border: 1em solid #1d8dff;
     padding: 0.5em;
     font-size: 1em;
     text-align: center;
