@@ -1,29 +1,135 @@
-.grid-container{
-    display: grid;
-grid-template-columns: repeat(3, 1fr);
-grid-template-rows: repeat(9, 1fr);
-grid-column-gap: 0px;
-grid-row-gap: 0px;
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
 
+:root {
+     --background: #C5C1C0; 
+    --accent: #4b4137;
+    --accent-dark: #ffffffc4;
+    --text: #0A1612;
+    --white: #fff;
 }
-.grid-item{
-    background-color: yellow;
-    border: 1em solid #1d8dff;
+
+
+
+body {
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+     background-color: var(--background); 
+    background-attachment: fixed;
+
+    /* background-image: url('../assets/background2.jpg'); */
+    background-size: cover;
+    animation: slidein 200s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-direction: alternate; 
+}
+
+body::after {
+    content: '';
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    /* background-color: #ad92787a; */
+}
+
+@-webkit-keyframes slidein {
+    from {background-position: top; background-size:3000px; }
+    to {background-position: -100px 0px;background-size:2750px;}
+}
+    
+@keyframes slidein {
+    from {background-position: top;background-size:3000px; }
+    to {background-position: -100px 0px;background-size:2750px;}
+}
+
+.header {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 3em;
+    margin: .1em;
+}
+
+.grid__container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5em;
+    margin: 5em;
+}
+
+.grid__tile {
+    background-color: var(--accent-dark);
+    color: var(--text);
+    border-radius: 32px;
     padding: 0.5em;
     font-size: 1em;
     text-align: center;
+    margin-bottom: 4em;
 }
-.image{
-    border-radius: 5em;
-}
-.een{
-    background-color: green;
 
+/* .grid__tile, .dark-mode{
+    box-shadow: 0 0 20px 10px rgb(255 255 255 / 62%);
+} */
+
+.grid__image {
+    background-color: var(--white);
+    border-radius: 50%;
+    padding: 16px;
+    width: 128px;
+    margin-top: -5em;
 }
-.divnaam{
+
+.grid__name {
     font-size: 4em;
-}
-.githubprofiel{
-    font-size: 1em;
+    margin: 0.1em;
 }
 
+.grid__socials {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+}
+
+.grid__socials a {
+    color: var(--accent);
+    text-decoration: unset;
+    font-size: 2em;
+}
+
+.grid__profilecard {
+    font-size: 3em;
+    background-color: transparent;
+    border: none;
+    width: 96px;
+    transition: all .1s ease-in;
+    cursor: pointer;
+}
+
+.grid__profilecard:hover {
+    transform: scale(1.2);
+}
+
+body.dark-mode {
+    background-color: black;
+    color: white;
+    
+  }
+
+body.dark-mode main > div{
+    box-shadow: 0 0 20px 10px rgb(255 255 255 / 62%);
+}
+
+/* Phone */
+@media only screen and (max-width: 767px) {
+    .grid__container {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Tablet */
+@media only screen and (max-width: 768px) {
+    .grid__container {
+        grid-template-columns: 2fr;
+    }
+}
