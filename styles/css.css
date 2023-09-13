@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
 
-/* root = var */
+/* :roort maakt variabele die elk staan voor een kleur. */
 
 :root {
     --background: #d4bcb5;
@@ -20,8 +20,6 @@ body {
 
 }
 
-
-
 .header {
     display: flex;
     align-content: center;
@@ -31,7 +29,7 @@ body {
     margin: .1em;
 }
 
-/*grid 4 colomns from left to right*/
+/* Grid 4 colomns from left to right */
 
 .grid__container {
     display: grid;
@@ -89,7 +87,19 @@ body {
 .grid__profilecard:hover {
     transform: scale(1.2);
 }
-/* darkt them*/
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 2em;
+}
+
+.footer h3, h5 {
+    margin: 0;
+}
+
+/* Dark Theme */
 .dark-mode{
     background-color: black;
     color: white;
@@ -98,7 +108,8 @@ body.dark-mode main > div{
     box-shadow: 0 0 20px 10px rgb(255 255 255 / 62%);
 }
 
-/* Phone */
+/* Media Query Phone */
+/* Kijkt naar de min en max width van de device */
 @media only screen and (max-width: 767px) and (min-width: 400px) {
     .grid__container {
         grid-template-columns: 1fr;
@@ -109,10 +120,10 @@ body.dark-mode main > div{
     }
 }
 
-/* Tablet */
+/* Media Query Tablet */
+/* Kijkt naar de min en max width van de device */
 @media only screen and (max-width: 1023px) and (min-width: 768px) {
     .grid__container {
-        /* grid-template-columns: (repeat(1, 2fr)); */
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, 1fr);
     }
