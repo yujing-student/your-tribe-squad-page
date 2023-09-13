@@ -1,23 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
 
 :root {
-     --background: #C5C1C0; 
-    --background: #C5C1C0;
+    --background: #d4bcb5;
     --accent: #4b4137;
     --accent-dark: #ffffffc4;
     --text: #0A1612;
     --white: #fff;
 }
 
-
-
 body {
     margin: 0;
     font-family: 'Quicksand', sans-serif;
-     background-color: var(--background); 
+    background-color: var(--background);
     background-attachment: fixed;
 
-    /* background-image: url('../assets/background2.jpg'); */
+    background-image: url('../assets/background2.jpg');
     background-size: cover;
     animation: slidein 200s;
     animation-fill-mode: forwards;
@@ -30,7 +27,7 @@ body::after {
     position: fixed;
     inset: 0;
     z-index: -1;
-    /* background-color: #ad92787a; */
+    background-color: #ad92787a;
 }
 
 @-webkit-keyframes slidein {
@@ -68,10 +65,6 @@ body::after {
     text-align: center;
     margin-bottom: 4em;
 }
-
-/* .grid__tile, .dark-mode{
-    box-shadow: 0 0 20px 10px rgb(255 255 255 / 62%);
-} */
 
 .grid__image {
     background-color: var(--white);
@@ -111,26 +104,22 @@ body::after {
     transform: scale(1.2);
 }
 
-body.dark-mode {
-    background-color: black;
-    color: white;
-    
-  }
-
-body.dark-mode main > div{
-    box-shadow: 0 0 20px 10px rgb(255 255 255 / 62%);
-}
-
 /* Phone */
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 767px) and (min-width: 400px) {
     .grid__container {
         grid-template-columns: 1fr;
+    }
+
+    .grid__name {
+        font-size: 3em;
     }
 }
 
 /* Tablet */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1023px) and (min-width: 768px) {
     .grid__container {
-        grid-template-columns: 2fr;
+        /* grid-template-columns: (repeat(1, 2fr)); */
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
     }
-}
+ }
