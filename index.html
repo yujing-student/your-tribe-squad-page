@@ -10,7 +10,8 @@
   </head>
   <body>
     <header class="header">
-      <h1>SQUAD 1D</h1>
+      <img class="" src="assets/lightmode.png" alt="Logo for Squad 1D in light mode.">
+      <button class="light-dark-switch" onclick="changetheme()"><i class="fa-regular fa-moon"></i></button>
     </header>
     <main class="grid__container">
 
@@ -41,7 +42,6 @@
         <h1 class="grid__name">Eef</h1>
         <div class="grid__socials">
           <a href="https://github.com/itsValyria" target="_blank"><i class="fa-brands fa-github"></i></a>
-          <!-- <a href="https://instagram.com/eefhaller"><i class="fa-brands fa-instagram"></i></a> -->
         </div>
         <div>
           <a href="https://itsvalyria.github.io/your-tribe-profile-card/" target="_blank"><img src="assets/emojibutton.png" class="grid__profilecard" alt="Button shaped like a pointing finger."></a>
@@ -50,7 +50,7 @@
     
       <div class="grid__tile">
         <img class="grid__image" src="https://avatars.githubusercontent.com/u/144004647?v=4" alt="Profile picture of student.">
-        <h1 class="grid__name">1.	Anne</h1>
+        <h1 class="grid__name">Anne</h1>
         <div class="grid__socials">
           <a href="https://github.com/Annevd" target="_blank"><i class="fa-brands fa-github"></i></a>
         </div>
@@ -61,7 +61,7 @@
     
       <div class="grid__tile">
         <img class="grid__image" src="https://avatars.githubusercontent.com/u/131701505?v=4" alt="Profile picture of student.">
-        <h1 class="grid__name">Lisa </h1>
+        <h1 class="grid__name">Lisa</h1>
         <div class="grid__socials">
           <a href="https://github.com/lisagjh" target="_blank"><i class="fa-brands fa-github"></i></a>
         </div>
@@ -72,7 +72,7 @@
     
       <div class="grid__tile">
         <img class="grid__image" src="https://avatars.githubusercontent.com/u/54812898?v=4" alt="Profile picture of student.">
-        <h1 class="grid__name">Daan </h1>
+        <h1 class="grid__name">Daan</h1>
         <div class="grid__socials">
           <a href="https://github.com/Daan645" target="_blank"><i class="fa-brands fa-github"></i></a>
         </div>
@@ -83,7 +83,7 @@
     
       <div class="grid__tile">
         <img class="grid__image" src="https://avatars.githubusercontent.com/u/144009698?v=4" alt="Profile picture of student.">
-        <h1 class="grid__name">	Nadira</h1>
+        <h1 class="grid__name">Nadira</h1>
         <div class="grid__socials">
           <a href="https://github.com/Naddybs" target="_blank"><i class="fa-brands fa-github"></i></a>
         </div>
@@ -100,17 +100,6 @@
         </div>
         <div>
           <a href="https://treppord.github.io/your-tribe-profile-card/" target="_blank"><img src="assets/emojibutton.png" class="grid__profilecard" alt="Button shaped like a pointing finger."></a>
-        </div>
-      </div>
-    
-      <div class="grid__tile">
-        <img class="grid__image" src="assets/discordlogo.png" alt="Profile picture of student.">
-        <h1 class="grid__name">Naam</h1>
-        <div class="grid__socials">
-          <a href="" target="_blank"><i class="fa-brands fa-github"></i></a>
-        </div>
-        <div>
-          <a href="" target="_blank"><img src="assets/emojibutton.png" class="grid__profilecard" alt="Button shaped like a pointing finger."></a>
         </div>
       </div>
     
@@ -138,7 +127,7 @@
     
       <div class="grid__tile">
         <img class="grid__image" src="https://avatars.githubusercontent.com/u/144009709?v=4" alt="Profile picture of student.">
-        <h1 class="grid__name">Wingsan </h1>
+        <h1 class="grid__name">Wing San</h1>
         <div class="grid__socials">
           <a href="https://github.com/wingsvn" target="_blank"><i class="fa-brands fa-github"></i></a>
         </div>
@@ -149,7 +138,7 @@
     
       <div class="grid__tile">
         <img class="grid__image" src="https://avatars.githubusercontent.com/u/25478764?v=4" alt="Profile picture of student.">
-        <h1 class="grid__name">Rijan </h1>
+        <h1 class="grid__name">Ryan</h1>
         <div class="grid__socials">
           <a href="https://github.com/Ryank2004" target="_blank"><i class="fa-brands fa-github"></i></a>
         </div>
@@ -160,7 +149,7 @@
     
       <div class="grid__tile">
         <img class="grid__image" src="https://avatars.githubusercontent.com/u/144007147?v=4" alt="Profile picture of student.">
-        <h1 class="grid__name">Ruben </h1>
+        <h1 class="grid__name">Ruben</h1>
         <div class="grid__socials">
           <a href="https://github.com/RubenErhardt" target="_blank"><i class="fa-brands fa-github"></i></a>
         </div>
@@ -177,6 +166,17 @@
         </div>
         <div>
           <a href="https://koeenm.github.io/your-tribe-profile-card/ " target="_blank"><img src="assets/emojibutton.png" class="grid__profilecard" alt="Button shaped like a pointing finger."></a>
+        </div>
+      </div>
+
+      <div class="grid__tile">
+        <img class="grid__image" src="assets/discordlogo.png" alt="Profile picture of student.">
+        <h1 class="grid__name">Naam</h1>
+        <div class="grid__socials">
+          <a href="" target="_blank"><i class="fa-brands fa-github"></i></a>
+        </div>
+        <div>
+          <a href="" target="_blank"><img src="assets/emojibutton.png" class="grid__profilecard" alt="Button shaped like a pointing finger."></a>
         </div>
       </div>
     
@@ -292,14 +292,32 @@
       
     </main>
     <footer class="footer">
-      <div class="footer__left">
-        <button onclick="changetheme()"><i class="fa-regular fa-moon"></i></button>
-        <h3> This site is part of the Front-End Development study at the AUAS.</h3>
-        <h5> Made by Jesse, Yu Jin & Eef.</h5>
+      <!--Waves Container-->
+      <div class="footer__waves">
+        <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+        viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+        <defs>
+        <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+        </defs>
+        <g class="parallax">
+        <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+        <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+        <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+        <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+        </g>
+        </svg>
       </div>
-      <div class="footer__right">
-        <a href="http://fdnd.nl">FDND.nl</a>
+
+      <div class="footer__container">
+        <div class="footer__left">
+          <h3> This site is part of the Front-End Development study at the AUAS.</h3>
+          <h5> Made by Jesse, Yu Jin & Eef.</h5>
+        </div>
+        <div class="footer__right">
+          <a class="footer__site" href="http://fdnd.nl">FDND.nl</a>
+        </div>
       </div>
+
     </footer>
   <script src="scripts/script.js"></script>
   </body>
@@ -307,8 +325,4 @@
 
 <!-- TO DO -->
 
-<!-- FOOTER -->
 <!-- SCROLLBAR - https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_scrollbars_styling -->
-<!-- CUSTOMIZING PROFILES -->
-<!-- CUSTOMIZING LINKS -->
-<!-- LOGO / HEADER? -->

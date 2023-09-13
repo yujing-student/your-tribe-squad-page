@@ -3,13 +3,20 @@
 /* :roort maakt variabele die elk staan voor een kleur. */
 
 :root {
-    --background: #d4bcb5;
+    --background: #a0beaa;
     --accent: #4b4137;
-    --accent-dark: #ffffffc4;
+    --accent-dark: #ffffffc0;
     --text: #0A1612;
     --white: #fff;
 }
 
+.dark-mode {
+    --background: black;
+    --accent: #313030;
+    --accent-dark: #ffffffc0;
+    --text: #0A1612;
+    --white: #fff;
+}
 
 /* var(--background) takes property value from :root */ 
 body {
@@ -29,6 +36,10 @@ body {
     margin: .1em;
 }
 
+.header img {
+    width: 50%;
+}
+
 /* Grid 4 colomns from left to right */
 
 .grid__container {
@@ -46,6 +57,7 @@ body {
     font-size: 1em;
     text-align: center;
     margin-bottom: 4em;
+    box-shadow: 4px 4px 4px rgba(121, 121, 121, 0.295);
 }
 
 
@@ -89,23 +101,59 @@ body {
 }
 
 .footer {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 2em;
+    color: var(--text);
 }
 
 .footer h3, h5 {
     margin: 0;
 }
 
-/* Dark Theme */
-.dark-mode{
-    background-color: black;
-    color: white;
+.footer__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--white);
+    padding: 2em;
 }
-body.dark-mode main > div{
-    box-shadow: 0 0 20px 10px rgb(255 255 255 / 62%);
+
+.footer__waves {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.footer__site {
+    text-decoration: none;
+    color: var(--text);
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+/* Dark Theme */
+.dark-mode {
+    background-color: var(--background);
+    color: var(--white);
+}
+
+body.dark-mode main > div {
+    box-shadow: 0 0 20px 10px rgba(255, 255, 255, .322);
+}
+
+body.dark-mode .light-dark-switch {
+    color: var(--white);
+}
+
+.light-dark-switch {
+    position: absolute;
+    right: 0;
+    margin: .5em;
+    background: none;
+    border: none;
+    font-size: .6em;
+}
+
+.light-dark-switch:hover {
+    cursor: pointer;
 }
 
 /* Media Query Phone */
@@ -118,6 +166,19 @@ body.dark-mode main > div{
     .grid__name {
         font-size: 3em;
     }
+
+    .footer__container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        display: flex;
+        align-items: center;
+        gap: 2em;
+        text-align: center;
+    }
+
+    .footer__right {
+        margin: 0 auto;
+    }
 }
 
 /* Media Query Tablet */
@@ -128,3 +189,95 @@ body.dark-mode main > div{
         grid-template-rows: repeat(2, 1fr);
     }
  }
+
+ /* CODEPEN WAVES */
+
+.flex { /*Flexbox for containers*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.waves {
+    position: relative;
+    width: 100%;
+    height: 15vh;
+    margin-bottom: -7px; /*Fix for safari gap*/
+    min-height: 100px;
+    max-height: 150px;
+}
+  
+.content {
+    position: relative;
+    height: 20vh;
+    text-align: center;
+    background-color: white;
+}
+  
+/* Animation */
+  
+.parallax > use {
+    animation: move-forever 25s cubic-bezier(.55, .5, .45, .5) infinite;
+}
+
+.parallax > use:nth-child(1) {
+    animation-delay: -2s;
+    animation-duration: 7s;
+}
+
+.parallax > use:nth-child(2) {
+    animation-delay: -3s;
+    animation-duration: 10s;
+}
+
+  .parallax > use:nth-child(3) {
+    animation-delay: -4s;
+    animation-duration: 13s;
+ }
+
+ .parallax > use:nth-child(4) {
+    animation-delay: -5s;
+    animation-duration: 20s;
+ }
+
+ @keyframes move-forever {
+    0% {
+     transform: translate3d(-90px, 0, 0);
+    }
+    100% { 
+      transform: translate3d(85px, 0, 0);
+    }
+ }
+
+  /*Shrinking for mobile*/
+ @media (max-width: 768px) {
+    .waves {
+      height: 40px;
+      min-height: 40px;
+    }
+
+    .content {
+      height: 30vh;
+    }
+    
+    h1 {
+      font-size: 24px;
+    }
+}
+
+/* SCROLLBAR */
+
+body::-webkit-scrollbar {
+    width: 8px;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+body::-webkit-scrollbar-thumb {
+  /* background-color: #c4c4c4; */
+  background-color: rgba(61, 61, 61, .418);
+  border-radius: 4px;
+}
