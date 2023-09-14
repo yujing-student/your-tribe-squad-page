@@ -131,7 +131,7 @@ body {
 
 /* Dark Theme */
 .dark-mode {
-    background-color: var(--background);
+    background: linear-gradient(45deg, #5c5c5c, black);
     color: var(--white);
 }
 
