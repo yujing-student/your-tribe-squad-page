@@ -157,7 +157,7 @@ body.dark-mode .light-dark-switch {
 }
 
 /* Media Query Phone */
-/* Kijkt naar de min en max width van de device */
+/* Kijkt naar de min en max width van de device, en geeft dan deze specifieke properties mee */
 @media only screen and (max-width: 767px) and (min-width: 400px) {
     .grid__container {
         grid-template-columns: 1fr;
@@ -182,7 +182,7 @@ body.dark-mode .light-dark-switch {
 }
 
 /* Media Query Tablet */
-/* Kijkt naar de min en max width van de device */
+/* Kijkt naar de min en max width van de device, en geeft dan deze specifieke properties mee */
 @media only screen and (max-width: 1023px) and (min-width: 768px) {
     .grid__container {
         grid-template-columns: repeat(2, 1fr);
