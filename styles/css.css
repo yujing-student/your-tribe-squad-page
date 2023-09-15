@@ -135,6 +135,7 @@ body {
     color: var(--white);
 }
 
+/* Deze selector selecteert de eerste div childs in main, maar alleen als de body de class .dark-mode heeft. */
 body.dark-mode main > div {
     box-shadow: 0 0 20px 10px rgba(255, 255, 255, .322);
 }
