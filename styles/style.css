@@ -22,9 +22,7 @@
 body {
     margin: 0;
     font-family: 'Quicksand', sans-serif;
-    background-color: var(--background);
-    background-attachment: fixed;
-
+    background: linear-gradient(0deg, #d4f2d6, #87bb99);
 }
 
 .header {
@@ -40,7 +38,8 @@ body {
     width: 50%;
 }
 
-/* Grid 4 colomns from left to right */
+/* Display grid zorgt in dit geval voor een grid layout */
+/* Grid Template Columns zorgt dan dat er 4 columns weergeven worden */
 
 .grid__container {
     display: grid;
@@ -59,8 +58,6 @@ body {
     margin-bottom: 4em;
     box-shadow: 4px 4px 4px rgba(121, 121, 121, 0.295);
 }
-
-
 
 .grid__image {
     background-color: var(--white);
@@ -135,8 +132,8 @@ body {
     color: var(--white);
 }
 
-/* Deze selector selecteert de eerste div childs in main, maar alleen als de body de class .dark-mode heeft. */
-body.dark-mode main > div {
+/* Deze selector selecteert de eerste section childs in main, maar alleen als de body de class .dark-mode heeft. */
+body.dark-mode main > section {
     box-shadow: 0 0 20px 10px rgba(255, 255, 255, .322);
 }
 
@@ -159,6 +156,7 @@ body.dark-mode .light-dark-switch {
 
 /* Media Query Phone */
 /* Kijkt naar de min en max width van de device, en geeft dan deze specifieke properties mee */
+/* Only screen betekent dat hij alleen applied op een device met de type 'screen' en niet naar een andere type, bijv. print. */
 @media only screen and (max-width: 767px) and (min-width: 400px) {
     .grid__container {
         grid-template-columns: 1fr;
@@ -184,6 +182,7 @@ body.dark-mode .light-dark-switch {
 
 /* Media Query Tablet */
 /* Kijkt naar de min en max width van de device, en geeft dan deze specifieke properties mee */
+/* Only screen betekent dat hij alleen applied op een device met de type 'screen' en niet naar een andere type, bijv. print. */
 @media only screen and (max-width: 1023px) and (min-width: 768px) {
     .grid__container {
         grid-template-columns: repeat(2, 1fr);
@@ -192,6 +191,7 @@ body.dark-mode .light-dark-switch {
  }
 
  /* CODEPEN WAVES */
+ /* BRON: https://codepen.io/goodkatz/pen/LYPGxQz */
 
 .flex { /*Flexbox for containers*/
     display: flex;
@@ -268,6 +268,7 @@ body.dark-mode .light-dark-switch {
 }
 
 /* SCROLLBAR */
+/* BRON: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_scrollbars_styling */
 
 body::-webkit-scrollbar {
     width: 8px;
@@ -278,7 +279,6 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-  /* background-color: #c4c4c4; */
   background-color: rgba(61, 61, 61, .418);
   border-radius: 4px;
 }
