@@ -55,6 +55,8 @@ CODE TABLET
 ```
 
 CODE MOBILE
+![mobiel](https://github.com/yujing-student/your-tribe-squad-page/assets/100352887/6d8b2e69-b07f-43f0-833b-fc2f2c505ca8)
+
 
 ``` html
   /*Shrinking for mobile*/
@@ -73,9 +75,30 @@ CODE MOBILE
     }
 }
 ```
+rechtsboven zie je iets van een maan tekendje dit is om achtergrond theme aan te passen naar dark
+```javascript
+function changetheme() {
+    const body = document.body
+    body.classList.toggle('dark-mode')
+    const isDarkMode = body.classList.contains('dark-mode')
+
+    //Toggled tussen de regular en filled icon, depending on dark mode activated of niet.
+    const toggle = document.querySelector('i') 
+    toggle.classList.toggle('fa-regular')
+    toggle.classList.toggle('fa-solid')
+
+    const hero = document.querySelector('.header > img') // Selecteert de IMG in de header
+    if (isDarkMode) { // Als de website op dark mode staat, dan
+        hero.src = 'assets/darkmode.png' // is de image darkmode.png
+    } else { // Anders,
+        hero.src = 'assets/lightmode.png' // is de image lightmode.png
+    }
+}
+```
+
+
 ## Licentie
 
 This project is licensed under the terms of the [MIT license](./LICENSE).
-
 
 
