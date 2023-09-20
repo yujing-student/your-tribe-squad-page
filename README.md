@@ -7,7 +7,7 @@ This project is licensed under the terms of the [MIT license](./LICENSE).
 
 
 
-```
+``` html
 <section class="grid__tile">
         <img data-birthday="" class="grid__birthdayimage hidden" src="assets/birthday.png" alt="Birthday cake!">
         <img class="grid__image" src="https://avatars.githubusercontent.com/u/100352887?v=4" alt="Github profile picture of Yu Jing.">
