@@ -53,10 +53,9 @@ CODE TABLET
     }
  }
 ```
-
+<img src="https://github.com/yujing-student/your-tribe-squad-page/assets/100352887/6d8b2e69-b07f-43f0-833b-fc2f2c505ca8" width="500px">
+<br>
 CODE MOBILE
-![mobiel](https://github.com/yujing-student/your-tribe-squad-page/assets/100352887/6d8b2e69-b07f-43f0-833b-fc2f2c505ca8)
-
 
 ``` html
   /*Shrinking for mobile*/
