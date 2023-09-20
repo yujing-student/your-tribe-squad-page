@@ -1,12 +1,6 @@
 > Fork deze leertaak en ga aan de slag, de instructie vind je in: [docs/INSTRUCTIONS.md](docs/INSTRUCTIONS.md)
 
-## Licentie
-
-This project is licensed under  ```<span>``` the terms of the [MIT license](./LICENSE).
-
-
-
-
+```<span>```
 ``` html
 <section class="grid__tile">
         <img data-birthday="" class="grid__birthdayimage hidden" src="assets/birthday.png" alt="Birthday cake!">
@@ -20,3 +14,12 @@ This project is licensed under  ```<span>``` the terms of the [MIT license](./LI
         </div>
       </section>
 ```
+
+
+
+## Licentie
+
+This project is licensed under the terms of the [MIT license](./LICENSE).
+
+
+
