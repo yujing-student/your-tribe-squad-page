@@ -32,9 +32,10 @@ HTML code van een vakje
 
 ```<span>```
 
-##Features en more
+## Responsive for every device
+Wij vinden het ook belangrijk dat je op elk apparaat onze squid page kunt bekijken daarom hebben wij met een media query ervoor gezorgd dat deze squidpage ook geschikt is voor telefoon en tablet
 
-Wij vinden het belangrijk dat je op elk apparaat onze squid page kunt bekijken daarom hebben wij met een media query ervoor gezorgd dat deze squidpage ook geschikt is voor telefoon en tablet
+CODE TABLET
 
 ``` html
 /* Media Query Tablet */
@@ -47,6 +48,9 @@ Wij vinden het belangrijk dat je op elk apparaat onze squid page kunt bekijken d
     }
  }
 ```
+
+CODE MOBILE
+
 ``` html
   /*Shrinking for mobile*/
  @media (max-width: 768px) {
