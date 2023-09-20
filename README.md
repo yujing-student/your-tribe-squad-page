@@ -15,6 +15,7 @@
       </section>
 ```
 
+![discord-image](https://github.com/yujing-student/your-tribe-squad-page/assets/144009667/631e13b2-f64a-486a-b666-1796e35d68af)
 
 
 ## Licentie
