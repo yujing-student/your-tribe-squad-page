@@ -34,6 +34,10 @@ HTML code van een vakje
 
 ## Responsive for every device
 Wij vinden het ook belangrijk dat je op elk apparaat onze squid page kunt bekijken daarom hebben wij met een media query ervoor gezorgd dat deze squidpage ook geschikt is voor telefoon en tablet
+TABLET
+
+<img src="(https://github.com/yujing-student/your-tribe-squad-page/assets/144009667/28d708a5-100c-4365-9908-89726302b333)" width="500px">
+
 
 CODE TABLET
 
