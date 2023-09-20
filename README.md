@@ -2,7 +2,7 @@
 
 ## Licentie
 
-This project is licensed under  `<span>` the terms of the [MIT license](./LICENSE).
+This project is licensed under  ```<span>``` the terms of the [MIT license](./LICENSE).
 
 
 
